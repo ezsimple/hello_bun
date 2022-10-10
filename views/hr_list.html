@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>HR 시각화</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+{% assign fname0 = data.fname0 %}
+{% assign fname1 = data.fname1 %}
+{% assign fname2 = data.fname2 %}
+{% assign fname3 = data.fname3 %}
+{% assign fname4 = data.fname4 %}
+{% assign fname5 = data.fname5 %}
+{% assign fname6 = data.fname6 %}
+{% assign fname7 = data.fname7 %}
+{% assign count = data.count %}
+
+<body class="text-center">
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner"></div>
+    </header>
+    <main role="main" class="inner cover">
+      <div style="padding: 5px"><img src='{{ fname0 }}' /></div>
+      <div style="padding: 5px"><img src='{{ fname1 }}' /></div>
+      <div style="padding: 5px"><img src='{{ fname2 }}' /></div>
+      <div style="padding: 5px"><img src='{{ fname3 }}' /></div>
+      <div style="padding: 5px"><img src='{{ fname4 }}' /></div>
+      <div style="padding: 5px"><img src='{{ fname5 }}' /></div>
+      <div style="padding: 5px"><img src='{{ fname7 }}' /></div>
+      <div style="padding: 5px"><img src='{{ fname6 }}' /></div>
+    </main>
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>made by mhlee</p>
+        <p>월별 직원연락망 분석용, 시각화 자료입니다</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+<style>
+  /* 이미지 사이즈를 화면에 맞춤 */
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+</style>

@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "bun run nodemon",
+    "debug": "DEBUG=* node ./app.js",
+    "node": "node ./app.js"
+  },
+  "dependencies": { "cjs": "^0.0.11", "commonjs": "^0.0.1", "express": "^4.18.2", "liquidjs": "^9.42.0" },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "bun-types": "^0.1.0"
+  },
+  "name": "hello_bun",
+  "module": "app.js",
+  "type": "module"
+}
